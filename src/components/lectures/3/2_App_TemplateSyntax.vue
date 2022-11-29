@@ -13,8 +13,11 @@
 		<hr />
 		<h2>속성 바인딩</h2>
 		<div title="hi">마우스를 올리세요</div>
+
 		<div v-bind:title="dynamicTitle">마우스를 올리세요</div>
+		<!-- v-bind를 생략하고 :[속성명]라고 써도 됨 -->
 		<input id="booleanVariable" value="dddd@" :disabled="isDisabled" />
+		<!-- 객체를 넣어 다중속성을 바인딩 할 수 있음 -->
 		<input v-bind="attrs" />
 
 		<hr />

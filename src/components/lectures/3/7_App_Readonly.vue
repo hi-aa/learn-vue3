@@ -10,6 +10,7 @@ export default {
 		const original = reactive({
 			count: 0,
 		});
+		// readonly로 객체의 변경 방지
 		const copy = readonly(original); // 값을 변경할 수 없음
 
 		original.count++;
