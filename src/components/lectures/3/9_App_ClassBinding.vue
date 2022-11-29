@@ -1,12 +1,16 @@
 <template>
 	<!-- v-bind:[속성명] -> :[속성명] // 간략하게 쓸 수 있음 -->
 	<div class="text" :class="classObject">객체를 바인딩 할 수 있음</div>
-	<!-- 클래스는 일반속성과 v-bind:class 디렉티브는 함께 사용 가능 -->
+	<!-- 클래스는 일반속성과 v-bind:class 디렉티브는 함께 사용 가능. 다른 속성은 안됨 -->
 	<button v-on:click="toggle">Toggle</button>
 
 	<div class="text" :class="classObject2">Computed Class Object</div>
-	<div class="text" :class="[isActive ? 'true' : 'false', 'etc1', 'etc2']">
-		배열 형태도 가능
+	<div
+		class="text"
+		:class="[isActive ? 'true' : 'false', 'etc1', 'etc2', classObject]"
+	>
+		배열 형태도 가능 <br />
+		배열 안 객체도 가능
 	</div>
 </template>
 
