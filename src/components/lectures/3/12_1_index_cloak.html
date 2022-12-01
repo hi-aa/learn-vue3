@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Vite App</title>
+    <style>
+      [v-cloak] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- v-cloak을 사용하면 요소에 v-cloak라는 속성이 들어감
+      랜더링이 되면 v-cloak이 사라짐 -->
+      <p v-cloak>
+        {{message}}
+      </p>
+      
+    </div>
+
+    <script>
+      const App = {
+        data() {
+          return {
+            message: '안녕하세요'
+          }
+        }
+      }
+
+      setTimeout(() => {
+        Vue.createApp(App).mount('#app');
+      }, 3000);
+    </script>
+
+  </body>
+</html>
