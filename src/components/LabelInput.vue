@@ -1,5 +1,9 @@
 <template>
-	<label>
+	<label
+		class="child-class"
+		style="border: 1px solid navajowhite"
+		id="child-id"
+	>
 		{{ label }} :
 		<input type="text" v-model="value" />
 		<!-- :value="modelValue"
