@@ -7,6 +7,9 @@
 			<div class="col col-4">
 				<AppCard></AppCard>
 			</div>
+			<div class="col col-4">
+				<AppCard></AppCard>
+			</div>
 		</div>
 	</main>
 </template>
