@@ -54,14 +54,7 @@ const child = ref(null); // null로 생성한 변수 // dom 마운트 되면 해
 
 // async/await 사용하기
 // script setup을 사용하면 async function 설정하지 않고 바로 await 호출할 수 있음
-const response = await axios(
-	'https://dummy.restapiexample.com/api/v1/employees',
-	{
-		headers: {
-			'Access-Control-Allow-Origin': 'https://dummy.restapiexample.com',
-		},
-	},
-);
+const response = await axios('https://dummyjson.com/products/1');
 console.log('response:', response);
 </script>
 
