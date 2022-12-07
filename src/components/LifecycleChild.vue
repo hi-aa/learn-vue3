@@ -27,7 +27,7 @@ export default {
 		// 4. 해제(소멸)
 		onBeforeUnmount(() => {
 			console.log('onBeforeUnmount');
-			console.log(document.querySelector('#input'));
+			console.log(document.querySelector('#input')); // => vue에서는 ref로 사용할 수 있음
 		});
 		onUnmounted(() => {
 			console.log('onUnmounted');
