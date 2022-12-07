@@ -9,13 +9,13 @@
 
 			<div class="row g-3">
 				<div class="col col-4" v-for="(post, index) in posts" :key="index">
-					<AppCard
+					<PostItem
 						:title="post.title"
 						:content="post.content"
 						:type="post.type"
 						:is-like="post.isLike"
 						@toggle-like="post.isLike = !post.isLike"
-					></AppCard>
+					></PostItem>
 				</div>
 			</div>
 
@@ -43,13 +43,13 @@
 
 <script>
 import { reactive, ref } from 'vue';
-import AppCard from './AppCard.vue';
+import PostItem from './PostItem.vue';
 import PostCreate from './PostCreate.vue';
 import LabelInput from './LabelInput.vue';
 
 export default {
 	components: {
-		AppCard,
+		PostItem,
 		PostCreate,
 		LabelInput,
 	},
