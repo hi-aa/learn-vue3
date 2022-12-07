@@ -1,19 +1,12 @@
 <template>
 	<div class="container py-4">
-		<TemplateRef></TemplateRef>
+		<!-- <TemplateRef></TemplateRef> -->
+		<ScriptSetup></ScriptSetup>
 	</div>
 </template>
 
-<script>
-import TemplateRef from './TemplateRef.vue';
-export default {
-	components: {
-		TemplateRef,
-	},
-	setup() {
-		return {};
-	},
-};
+<script setup>
+import ScriptSetup from './ScriptSetup.vue';
 </script>
 
 <style lang="scss" scoped></style>
